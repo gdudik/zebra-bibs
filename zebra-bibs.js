@@ -5,8 +5,9 @@ const zebraPrinterIP = prompt('Enter Zebra Printer IP Address: ')
 const zebraPort = 9100
 const reversed = prompt('Print Reversed? (Y/N) ')
 const isReversed = reversed.toUpperCase() === 'Y'
-let numToPrint = parseInt(prompt('Number to Print? '),10)
 let startingNum = parseInt(prompt('Starting Number? '),10)
+let numToPrint = parseInt(prompt('Number to Print? '),10)
+
 
 const client = new net.Socket()
 client.connect(zebraPort, zebraPrinterIP, () => {
