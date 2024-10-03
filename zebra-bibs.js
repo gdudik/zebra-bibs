@@ -37,7 +37,7 @@ client.on('close', () => {
 function generateRawZPL(num) {
     intNum = parseInt(num, 10)
     let stringedNum = intNum.toString()
-    //hexId needs to be 24 characters
+    //hexId needs to be 24 characters long
     while (stringedNum.length < 24) {
         stringedNum = '0' + stringedNum
     }
